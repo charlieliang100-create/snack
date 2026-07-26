@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mia's Snack Menu</title>
+    <meta
+      name="description"
+      content="A simple snack price menu for high school students buying snacks from Mia during lunch."
+    />
+    <link rel="preload" as="image" href="assets/snack-table.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Mia's Snack Menu home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Mia's Snacks</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav aria-label="Snack menu">
+        <a href="#new">New</a>
+        <a href="#snacks">Snacks</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#info">Info</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/snack-table.png"
+          alt="A lunch table with colorful snacks, drinks, and a cash box in a school quad"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="kicker">Student snack stand</p>
+          <h1 id="hero-title">Mia's Snack Menu</h1>
+          <p class="stand-note">Main quad &bull; Lunch, Tue&ndash;Fri &bull; Cash only</p>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Quick menu note">
+        <p>Prices are per item. Please bring small bills or coins when you can.</p>
+      </section>
+
+      <section class="section" id="new" aria-labelledby="new-title">
+        <div class="section-heading">
+          <p class="kicker">New this week</p>
+          <h2 id="new-title">Fresh picks near the top of the table.</h2>
+        </div>
+        <div class="new-grid">
+          <article>
+            <span class="item-tag">New</span>
+            <h3>Takis Fuego</h3>
+            <p>Rolled corn chips with hot chili and lime flavor.</p>
+            <strong>$1.50</strong>
+          </article>
+          <article>
+            <span class="item-tag">New</span>
+            <h3>Capri Sun Fruit Punch</h3>
+            <p>Fruit punch juice drink pouch.</p>
+            <strong>$2.00</strong>
+          </article>
+          <article>
+            <span class="item-tag">New</span>
+            <h3>Little Debbie Cosmic Brownie</h3>
+            <p>Chocolate brownie with candy pieces.</p>
+            <strong>$1.25</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section snacks-band" id="snacks" aria-labelledby="snacks-title">
+        <div class="section-heading">
+          <p class="kicker">Menu</p>
+          <h2 id="snacks-title">Snack prices</h2>
+        </div>
+        <div class="snack-grid">
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Chips</span>
+              <h3>Doritos Nacho Cheese</h3>
+              <p>Cheese flavored corn chips.</p>
+            </div>
+            <strong>$1.25</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Chips</span>
+              <h3>Takis Fuego</h3>
+              <p>Hot chili and lime rolled chips.</p>
+            </div>
+            <strong>$1.50</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Sweet</span>
+              <h3>Chips Ahoy! Original</h3>
+              <p>Chocolate chip cookie pack.</p>
+            </div>
+            <strong>$1.00</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Sweet</span>
+              <h3>Little Debbie Cosmic Brownie</h3>
+              <p>Chocolate brownie with candy pieces.</p>
+            </div>
+            <strong>$1.25</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Bar</span>
+              <h3>Nature Valley Oats 'n Honey</h3>
+              <p>Crunchy granola bar pouch.</p>
+            </div>
+            <strong>$1.00</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Candy</span>
+              <h3>Welch's Mixed Fruit Snacks</h3>
+              <p>Fruit snack pouch.</p>
+            </div>
+            <strong>$0.75</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Drink</span>
+              <h3>Bottled Water</h3>
+              <p>Cold bottle.</p>
+            </div>
+            <strong>$1.00</strong>
+          </article>
+          <article class="snack-card">
+            <div>
+              <span class="snack-type">Drink</span>
+              <h3>Capri Sun Fruit Punch</h3>
+              <p>Fruit punch pouch.</p>
+            </div>
+            <strong>$1.25</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ingredients" id="ingredients" aria-labelledby="ingredients-title">
+        <div class="section-heading">
+          <p class="kicker">Ingredients</p>
+          <h2 id="ingredients-title">What's inside</h2>
+        </div>
+        <div class="info-list">
+          <article>
+            <h3>Doritos Nacho Cheese</h3>
+            <p>Corn chips made with corn, canola oil, maltodextrin, whey powder, salt, sugar, cream powder, spices, tomato powder, onion powder, yeast extract, colors, flavors, and food acids. Contains milk, soy, and gluten ingredients.</p>
+          </article>
+          <article>
+            <h3>Takis Fuego</h3>
+            <p>Rolled chips made with precooked maize flour, sunflower or maize oil, maltodextrin, citric acid, salt, flavoring, starch, flavor enhancers, sugar, vegetable concentrates, paprika extract, and lemon-lime essential oil. May contain soy, milk, and gluten.</p>
+          </article>
+          <article>
+            <h3>Chips Ahoy! Original</h3>
+            <p>Cookies made with enriched wheat flour, semisweet chocolate chips, sugar, soybean or canola oil, palm oil, high fructose corn syrup, leavening, salt, flavors, and caramel color. Contains milk, wheat, and soy.</p>
+          </article>
+          <article>
+            <h3>Little Debbie Cosmic Brownie</h3>
+            <p>Brownie made with enriched wheat flour, corn syrup, palm and soybean oils, sugar, dextrose, water, cocoa, candy pieces, soy lecithin, salt, corn starch, leavening, caramel color, flavors, eggs, whey, and soy flour. Contains wheat, soy, milk, and egg.</p>
+          </article>
+          <article>
+            <h3>Nature Valley Oats 'n Honey</h3>
+            <p>Crunchy granola bars made with whole grain oats, sugar, canola or sunflower oil, rice flour, honey, salt, brown sugar syrup, baking soda, soy lecithin, and natural flavor. Contains soy; may contain peanut, almond, and pecan ingredients.</p>
+          </article>
+          <article>
+            <h3>Welch's Mixed Fruit Snacks</h3>
+            <p>Fruit snacks made with whole fruit puree, corn syrup, sugar, modified corn starch, gelatin, grape juice concentrate, citric and lactic acids, flavors, vitamins A, C, and E, carnauba wax, and colors from annatto, turmeric, and fruit or vegetable juice.</p>
+          </article>
+          <article>
+            <h3>Bottled Water</h3>
+            <p>Water only. Check the bottle label if Mia changes brands.</p>
+          </article>
+          <article>
+            <h3>Capri Sun Fruit Punch</h3>
+            <p>Juice drink made with filtered water, sugar, pear, grape, orange, apple, and pineapple juice concentrates, citric acid, monk fruit concentrate, natural flavor, and mushroom extract to protect quality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="more-info" id="info" aria-labelledby="info-title">
+        <div>
+          <p class="kicker">More info</p>
+          <h2 id="info-title">Before you buy</h2>
+        </div>
+        <ul>
+          <li>Items are sold during lunch only, Tuesday through Friday, at the main quad table.</li>
+          <li>Popular snacks can sell out before lunch ends, especially new items.</li>
+          <li>Ingredient labels can change, so use the wrapper as the final source before buying.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Mia's Snack Menu</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
